@@ -1,6 +1,7 @@
 package com.example.demo.service;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
 /**
@@ -10,6 +11,7 @@ import org.springframework.stereotype.Component;
  * @blog http://blog.didispace.com
  */
 @Component
+@PropertySource(value="classpath:application.properties",encoding = "utf-8")
 public class BlogProperties {
 
     @Value("${com.didispace.blog.name}")
