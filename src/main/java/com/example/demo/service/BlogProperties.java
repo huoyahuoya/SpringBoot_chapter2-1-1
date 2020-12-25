@@ -11,7 +11,6 @@ import org.springframework.stereotype.Component;
  * @blog http://blog.didispace.com
  */
 @Component
-@PropertySource(value="classpath:application.properties",encoding = "utf-8")
 public class BlogProperties {
 
     @Value("${com.didispace.blog.name}")
